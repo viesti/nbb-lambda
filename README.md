@@ -1,6 +1,6 @@
 # NBB in AWS Lambda NodeJS runtime
 
-```
+```sh
 # Install deps
 $ npm install
 # Package for deployment
