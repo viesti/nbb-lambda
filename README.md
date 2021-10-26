@@ -13,3 +13,5 @@ $ aws lambda invoke --function-name hello-nbb foo
 $ cat foo
 {"hello":"world"}%
 ```
+
+![test image](image.png)
