@@ -1,6 +1,9 @@
+(require '["aws-sdk$default" :as aws])
+(def sts (aws/STS.))
+
 (defn handler [event context]
-  (println event)
   (js/Promise. (fn [resolve reject]
-                 (resolve (clj->js {"hello" "world"})))))
+                 (.getCallerIdentity sts nil (fn [err data]
+                                               (resolve data))))))
 
 handler
